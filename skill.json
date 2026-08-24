@@ -1,0 +1,41 @@
+{
+  "name": "genpark-personalized-beauty-subscription-box-recommender-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Personalized beauty subscription box recommender and algorithmic beauty profile curation engine.",
+  "author": "genpark",
+  "category": "dtc",
+  "tags": [
+    "beauty-subscription",
+    "glam-bag",
+    "beauty-quiz",
+    "personalization",
+    "ipsy"
+  ],
+  "inputs": {
+    "skin_tone": {
+      "type": "string"
+    },
+    "eye_color": {
+      "type": "string"
+    },
+    "makeup_style": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "curated_bag_id": {
+      "type": "string"
+    },
+    "box_products": {
+      "type": "array"
+    },
+    "total_retail_value_usd": {
+      "type": "number"
+    },
+    "monthly_subscription_price_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
